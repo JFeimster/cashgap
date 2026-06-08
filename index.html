@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok Shop Viral Curse Predictor | LDR Risk Assessment</title>
+  <meta name="description" content="Estimate late-dispatch and stockout risk before a viral TikTok Shop sales spike drains your cash." />
+  <meta property="og:title" content="TikTok Shop Viral Curse Predictor" />
+  <meta property="og:description" content="Calculate your LDR Risk Assessment Score before virality becomes a suspension notice." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <div class="eyebrow">TikTok Shop Seller Survival Tool</div>
+      <h1>TikTok Shop Viral Curse Predictor</h1>
+      <p class="lede">
+        Virality is cute until TikTok holds your funds, your supplier asks for cash, and your dispatch clock starts sharpening knives.
+      </p>
+      <a href="#calculator" class="button primary">Check My LDR Risk</a>
+    </section>
+
+    <section class="card warning">
+      <strong>The bleeding neck problem:</strong>
+      TikTok Shop payouts can lag while orders spike. If you cannot reorder fast enough, you risk stockouts, late dispatch, and account penalties.
+    </section>
+
+    <section id="calculator" class="calculator-grid">
+      <form class="card form-card" id="riskForm">
+        <h2>LDR Risk Inputs</h2>
+
+        <label>
+          Current Cash Available
+          <input type="number" id="cash" min="0" step="0.01" placeholder="2500" required />
+        </label>
+
+        <label>
+          Units Sold or Expected in Viral Spike
+          <input type="number" id="units" min="1" step="1" placeholder="800" required />
+        </label>
+
+        <label>
+          Supplier Cost per Unit
+          <input type="number" id="cost" min="0" step="0.01" placeholder="4.25" required />
+        </label>
+
+        <label>
+          TikTok Funds Hold Days
+          <input type="number" id="holdDays" min="0" step="1" placeholder="21" value="21" />
+        </label>
+
+        <label>
+          Supplier Lead Time in Days
+          <input type="number" id="leadTime" min="0" step="1" placeholder="7" value="7" />
+        </label>
+
+        <button class="button primary" type="submit">Generate Risk Score</button>
+      </form>
+
+      <aside class="card result-card" id="resultCard">
+        <div class="result-label">LDR Risk Assessment Score</div>
+        <div class="score" id="score">—</div>
+        <div class="status neutral" id="status">Awaiting inputs</div>
+        <p id="resultText">Enter your numbers to reveal whether virality is a blessing, a trapdoor, or a clown car with invoice wheels.</p>
+
+        <div class="meter">
+          <div class="meter-fill" id="meterFill"></div>
+        </div>
+
+        <div class="mini-grid">
+          <div>
+            <span>Reorder Need</span>
+            <strong id="reorderNeed">—</strong>
+          </div>
+          <div>
+            <span>Cash Coverage</span>
+            <strong id="coverage">—</strong>
+          </div>
+          <div>
+            <span>Cash Gap</span>
+            <strong id="gap">—</strong>
+          </div>
+        </div>
+
+        <button class="button secondary" id="copyBtn" type="button">Copy Shareable Assessment</button>
+      </aside>
+    </section>
+
+    <section class="card lead-card">
+      <h2>Need to survive the spike?</h2>
+      <p>Use this score to decide whether you need inventory capital before the algorithm blesses you with logistical violence.</p>
+      <form class="lead-form" onsubmit="event.preventDefault(); alert('Lead captured. Connect this form to your CRM or email tool.');">
+        <input type="email" placeholder="seller@email.com" required />
+        <button class="button primary" type="submit">Get Funding Readiness Checklist</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>This tool provides directional estimates only. It is not affiliated with TikTok and does not guarantee account, payout, or dispatch outcomes.</p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
