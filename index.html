@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CashGap | Tools for Growth-Induced Financial Violence</title>
+  <meta name="description" content="CashGap is a directory of sharp little fintech tools for sellers, operators, and growth teams trying to survive demand spikes, payout delays, and inventory cash crunches." />
+  <meta property="og:title" content="CashGap" />
+  <meta property="og:description" content="Find the cash gaps hiding inside your growth." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header">
+    <a class="brand-mark" href="./" aria-label="CashGap home">
+      <span class="brand-icon">$</span>
+      <span>CashGap</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#tools">Tools</a>
+      <a href="#system">System</a>
+      <a href="#submit">Submit Idea</a>
+    </nav>
+
+    <a class="header-cta" href="#tools">Open Vault</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Neo-brutalist fintech arcade for cashflow survival</p>
+        <h1>
+          Growth creates
+          <span>cash gaps.</span>
+          We make them visible.
+        </h1>
+        <p class="lede">
+          CashGap is a live directory of calculators, simulators, and mini-sites for operators who sell fast,
+          wait on payouts, and discover that virality sometimes arrives wearing a debt collector’s perfume.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tools">Browse Tools</a>
+          <a class="btn btn-ghost" href="#submit">Generate New Tool</a>
+        </div>
+      </div>
+
+      <aside class="hero-console" aria-label="CashGap diagnostic console">
+        <div class="console-top">
+          <span></span><span></span><span></span>
+          <strong>cashgap://scan</strong>
+        </div>
+        <div class="console-grid">
+          <div>
+            <small>Risk Index</small>
+            <strong id="riskTicker">87</strong>
+          </div>
+          <div>
+            <small>Tool Count</small>
+            <strong id="toolCount">03</strong>
+          </div>
+          <div>
+            <small>Status</small>
+            <strong>LIVE</strong>
+          </div>
+        </div>
+        <div class="terminal">
+          <p><span>›</span> Detecting payout delay drag...</p>
+          <p><span>›</span> Measuring inventory pressure...</p>
+          <p><span>›</span> Summoning tiny calculators with expensive taste...</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="CashGap focus areas">
+      <div>
+        <span>Inventory shock</span>
+        <span>Payout delay</span>
+        <span>Supplier pressure</span>
+        <span>Dispatch risk</span>
+        <span>Working capital</span>
+        <span>Viral demand</span>
+      </div>
+    </section>
+
+    <section class="section-head" id="tools">
+      <p class="kicker">The Tool Vault</p>
+      <h2>Open a product. Run the ritual. Export the panic as a score.</h2>
+    </section>
+
+    <section class="tool-grid" id="toolGrid">
+      <a class="tool-card is-featured" href="./products/viral-curse-predictor/">
+        <div class="card-topline">
+          <span>TikTok Shop Sellers</span>
+          <strong>01</strong>
+        </div>
+        <h3>Viral Curse Predictor</h3>
+        <p>Calculate stockout, cash gap, and late dispatch risk before a viral spike mutates into a suspension notice.</p>
+        <div class="tool-meta">
+          <span>Calculator</span>
+          <span>LDR Score</span>
+          <span>Critical Risk</span>
+        </div>
+        <div class="open-line">Open product →</div>
+      </a>
+
+      <a class="tool-card" href="./products/inventory-funding-calculator/">
+        <div class="card-topline">
+          <span>Ecommerce Operators</span>
+          <strong>02</strong>
+        </div>
+        <h3>Inventory Funding Calculator</h3>
+        <p>Estimate reorder funding needs when demand is hot, cash is cold, and your supplier has no interest in your vibes.</p>
+        <div class="tool-meta">
+          <span>Estimator</span>
+          <span>Cash Gap</span>
+          <span>Funding Need</span>
+        </div>
+        <div class="open-line">Open product →</div>
+      </a>
+
+      <a class="tool-card" href="./products/payout-delay-simulator/">
+        <div class="card-topline">
+          <span>Marketplace Sellers</span>
+          <strong>03</strong>
+        </div>
+        <h3>Payout Delay Simulator</h3>
+        <p>Model how payout holds distort cash conversion, reorder timing, and fulfillment capacity during a sales spike.</p>
+        <div class="tool-meta">
+          <span>Simulator</span>
+          <span>Runway</span>
+          <span>Payout Lag</span>
+        </div>
+        <div class="open-line">Open product →</div>
+      </a>
+    </section>
+
+    <section class="system-strip" id="system">
+      <div>
+        <p class="kicker">System Architecture</p>
+        <h2>One homepage. Many dangerous little machines.</h2>
+      </div>
+      <div class="folder-map">
+        <code>cashgap/</code>
+        <code>├─ index.html</code>
+        <code>├─ styles.css</code>
+        <code>├─ script.js</code>
+        <code>└─ products/[tool-name]/</code>
+      </div>
+    </section>
+
+    <section class="submit-panel" id="submit">
+      <div>
+        <p class="kicker">Asset Foundry Input</p>
+        <h2>Submit the next cashflow creature.</h2>
+        <p>Use this format to generate another static product under <code>/products/product-slug/</code>.</p>
+      </div>
+
+      <form class="idea-form" id="ideaForm">
+        <label>
+          Tool Name
+          <input name="toolName" placeholder="Payout Delay Doom Clock" required />
+        </label>
+        <label>
+          Target Persona
+          <input name="persona" placeholder="Amazon Sellers" required />
+        </label>
+        <label>
+          Bleeding Neck Problem
+          <textarea name="problem" placeholder="Payouts lag, inventory needs cash today, and the algorithm does not care." required></textarea>
+        </label>
+        <label>
+          Core Logic
+          <textarea name="logic" placeholder="Cash on hand / reorder need. If below 1.0, critical risk." required></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Copy Tool Brief</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>CashGap © <span id="year"></span>. Built for operators allergic to invisible financial cliffs.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
